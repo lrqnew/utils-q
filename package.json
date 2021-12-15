@@ -1,13 +1,13 @@
 {
-  "name": "q-utils",
+  "name": "utils-q",
   "version": "1.0.0",
-  "description": "q-utils for Typescript.",
+  "description": "utils-q for Typescript.工具函数",
   "main": "dist/index.js",
   "module": "dist/index.esm.js",
   "types": "dist/index.d.ts",
   "sideEffects": false,
   "scripts": {
-    "cleanup": "rm -rf dist",
+    "cleanup": "rimraf  dist",
     "build": "rollup -c",
     "doc": "typedoc",
     "pubdoc": "yarn doc && gh-pages -d docs -b docs",
@@ -19,10 +19,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/lrqnew/q-utils.git"
+    "url": "https://github.com/lrqnew/utils-q.git"
   },
   "bugs": {
-    "url": "https://github.com/lrqnew/q-utils.git"
+    "url": "https://github.com/lrqnew/utils-q.git"
   },
   "keywords": [
     "functions",
@@ -40,7 +40,7 @@
   ],
   "author": "lrqnew",
   "license": "MIT",
-  "homepage": "https://github.com/lrqnew/q-utils.git",
+  "homepage": "https://github.com/lrqnew/utils-q.git",
   "devDependencies": {
     "@babel/core": "^7.15.0",
     "@babel/preset-env": "^7.15.0",
