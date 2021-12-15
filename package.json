@@ -1,0 +1,66 @@
+{
+  "name": "q-utils",
+  "version": "1.0.0",
+  "description": "q-utils for Typescript.",
+  "main": "dist/index.js",
+  "module": "dist/index.esm.js",
+  "types": "dist/index.d.ts",
+  "sideEffects": false,
+  "scripts": {
+    "cleanup": "rm -rf dist",
+    "build": "rollup -c",
+    "doc": "typedoc",
+    "pubdoc": "yarn doc && gh-pages -d docs -b docs",
+    "prepublishOnly": "yarn run cleanup && yarn run build",
+    "test": "jest"
+  },
+  "files": [
+    "dist"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/lrqnew/q-utils.git"
+  },
+  "bugs": {
+    "url": "https://github.com/lrqnew/q-utils.git"
+  },
+  "keywords": [
+    "functions",
+    "util",
+    "js",
+    "javascript",
+    "node.js",
+    "node",
+    "nodejs",
+    "utils",
+    "utility",
+    "utilities",
+    "lib",
+    "library"
+  ],
+  "author": "lrqnew",
+  "license": "MIT",
+  "homepage": "https://github.com/lrqnew/q-utils.git",
+  "devDependencies": {
+    "@babel/core": "^7.15.0",
+    "@babel/preset-env": "^7.15.0",
+    "@babel/preset-typescript": "^7.15.0",
+    "@rollup/plugin-node-resolve": "^13.0.4",
+    "@rollup/plugin-typescript": "^8.2.3",
+    "@types/babel__core": "^7.1.15",
+    "@types/jest": "^27.0.1",
+    "babel-jest": "^27.0.6",
+    "gh-pages": "^3.2.3",
+    "jest": "^27.0.6",
+    "prettier": "^2.5.1",
+    "rollup": "^2.60.2",
+    "tslib": "^2.3.1",
+    "typedoc": "^0.22.10",
+    "typedoc-plugin-param-names": "^3.0.1",
+    "typescript": "^4.5.2"
+  },
+  "dependencies": {
+    "@rollup/plugin-commonjs": "^21.0.1",
+    "dayjs": "^1.10.7"
+  }
+}
