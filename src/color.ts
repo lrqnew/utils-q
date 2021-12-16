@@ -2,7 +2,7 @@
  * @Author: lrqnew
  * @Date: 2021-12-16 10:25:18
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-16 11:24:15
+ * @LastEditTime: 2021-12-16 13:04:46
  * @FilePath: \q-utils\src\color.ts
  * @Description: 颜色工具函数
  */
@@ -70,7 +70,7 @@ function subtractLight(color: string, amount: number) {
   return c.toString(16).length > 1 ? c.toString(16) : `0${c.toString(16)}`
 }
 /**
- * 根据通过的百分比调暗十六进制颜色
+ * 根据百分比调暗十六进制颜色
  * @param {string} color 要处理的颜色
  * @param {number} amount 改变颜色的量
  * @returns {string} 结果颜色
@@ -85,7 +85,7 @@ export function darken(color: string, amount: number) {
 }
 
 /**
- * 根据通过的百分比，调亮十六进制颜色
+ * 根据百分比，调亮十六进制颜色
  * @param {string} color 要改变的颜色
  * @param {number} amount 改变颜色的量
  * @returns {string} 结果颜色
