@@ -1,8 +1,8 @@
 /*
- * @Author: OBKoro1
+ * @Author: lrqnew
  * @Date: 2021-12-16 10:25:18
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-16 10:58:11
+ * @LastEditTime: 2021-12-16 11:24:15
  * @FilePath: \q-utils\src\color.ts
  * @Description: 颜色工具函数
  */
@@ -14,7 +14,7 @@
  * @param   String  color   十六进制颜色值
  * @return  Boolean
  */
-export function isHexColor(color: string) {
+export function isHexColor(color: string):boolean {
   const reg = /^#([0-9a-fA-F]{3}|[0-9a-fA-f]{6})$/
   return reg.test(color)
 }

@@ -7,5 +7,6 @@
   "excludeProtected": true,
   "includeVersion": true,
   "out": "docs",
-  "theme": "minimal"
+  "theme": "default",
+  "hideGenerator":true
 }
