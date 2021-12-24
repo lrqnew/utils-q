@@ -2,7 +2,7 @@
  * @Author: lrqnew
  * @Date: 2021-12-15 16:37:47
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-16 13:28:47
+ * @LastEditTime: 2021-12-24 09:58:29
  * @FilePath: \q-utils\src\dateUtil.ts
  * @Description: 时间格式化
  */
@@ -262,3 +262,5 @@ function doHandleMonth(month: string | number) {
 
   return m
 }
+
+
