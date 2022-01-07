@@ -1,9 +1,9 @@
 /*
- * @Author: OBKoro1
+ * @Author: lrqnew
  * @Date: 2021-12-24 09:50:11
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-24 09:56:07
- * @FilePath: \q-utils\src\fileUtil.ts
+ * @LastEditTime: 2022-01-07 17:27:34
+ * @FilePath: \utils-q\src\fileUtil.ts
  * @Description: 文件工具函数
  */
 

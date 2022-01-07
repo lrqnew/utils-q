@@ -1,9 +1,9 @@
 /*
- * @Author: OBKoro1
+ * @Author: lrqnew
  * @Date: 2021-12-24 09:53:25
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-24 09:56:31
- * @FilePath: \q-utils\test\fileUtils.test.ts
+ * @LastEditTime: 2022-01-07 17:27:24
+ * @FilePath: \utils-q\test\fileUtils.test.ts
  * @Description:
  */
 import { getuuid, getTimeId } from "../src/fileUtil"

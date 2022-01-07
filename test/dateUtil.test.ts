@@ -1,9 +1,9 @@
 /*
- * @Author: OBKoro1
+ * @Author: lrqnew
  * @Date: 2021-12-16 10:00:44
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-16 13:30:04
- * @FilePath: \q-utils\test\dateUtil.test.ts
+ * @LastEditTime: 2022-01-07 17:27:20
+ * @FilePath: \utils-q\test\dateUtil.test.ts
  * @Description:
  */
 import { formatToDate, formatToDateTime, getAge,getTimeStringAutoShort2,getDay } from "../src/dateUtil"

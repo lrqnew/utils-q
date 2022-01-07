@@ -1,9 +1,9 @@
 /*
- * @Author: OBKoro1
+ * @Author: lrqnew
  * @Date: 2021-12-15 16:15:03
- * @LastEditors: 
- * @LastEditTime: 2021-12-15 17:30:29
- * @FilePath: \QUtils\rollup.config.js
+ * @LastEditors: Please set LastEditors
+ * @LastEditTime: 2022-01-07 17:26:46
+ * @FilePath: \utils-q\rollup.config.js
  * @Description: 
  */
 import moduleResolve from "@rollup/plugin-node-resolve"

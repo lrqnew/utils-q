@@ -1,9 +1,9 @@
 /*
- * @Author: OBKoro1
+ * @Author: lrqnew
  * @Date: 2021-12-16 10:27:01
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-16 10:49:19
- * @FilePath: \q-utils\test\color.test.ts
+ * @LastEditTime: 2022-01-07 17:27:16
+ * @FilePath: \utils-q\test\color.test.ts
  * @Description:
  */
 import { isHexColor, hexToRGB, rgbToHex } from "../src/color"
