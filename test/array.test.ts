@@ -2,11 +2,16 @@
  * @Author: lrqnew
  * @Date: 2022-06-27 14:10:22
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-06-27 15:45:56
+ * @LastEditTime: 2022-06-27 16:05:08
  * @FilePath: \utils-q\test\array.test.ts
  * @Description:
  */
-import { getMaxValue, getMaxValueItem, dupAvg } from "../src/arrayUtils"
+import {
+  getMaxValue,
+  getMaxValueItem,
+  dupAvg,
+  arrayRemove,
+} from "../src/arrayUtils"
 
 describe("对象函数", () => {
   test("返回对象中所有属性的最大值", () => {
@@ -38,9 +43,12 @@ describe("对象函数", () => {
         2,
       ),
     ).toStrictEqual([
-      { "x": "2021-10-21", "y": "150.00" },
-      { "x": "2021-10-22", "y": "20.00" },
+      { x: "2021-10-21", y: "150.00" },
+      { x: "2021-10-22", y: "20.00" },
     ])
   })
-  
+
+  test("删除数组中指定的元素", () => {
+    expect(arrayRemove( 10,[20, 10, 101])).toStrictEqual([20,101])
+  })
 })

@@ -2,7 +2,7 @@
  * @Author: lrqnew
  * @Date: 2022-06-27 14:07:43
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-06-27 15:28:25
+ * @LastEditTime: 2022-06-27 16:05:06
  * @FilePath: \utils-q\src\arrayUtils.ts
  * @Description: 数组工具函数
  */
@@ -76,4 +76,17 @@ export function dupAvg(arry: any[], dupkey: string | number, avgkey: string | nu
     })
   }
   return newArraySeries
+}
+
+/**
+ * 删除数组中指定的元素
+ * @param val
+ * @param arr
+ */
+ export function arrayRemove(val: any, arr: any[]) {
+  const index = arr.indexOf(val);
+  if (index > -1) {
+    arr.splice(index, 1);
+  }
+  return arr
 }
