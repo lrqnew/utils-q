@@ -2,7 +2,7 @@
  * @Author: lrqnew
  * @Date: 2021-12-16 10:00:44
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-06-27 15:50:44
+ * @LastEditTime: 2022-06-27 17:11:18
  * @FilePath: \utils-q\test\dateUtil.test.ts
  * @Description:
  */
@@ -13,7 +13,8 @@ import {
   getTimeStringAutoShort2,
   getDay,
   forwardRankingDate,
-  reverseRankingDate
+  reverseRankingDate,
+  getBirthSlot,
 } from "../src/dateUtil"
 
 describe("时间格式化", () => {
@@ -44,8 +45,8 @@ describe("时间格式化", () => {
         "ExecutionTime",
       ),
     ).toStrictEqual([
-      { "ExecutionTime": "2022-01-23 14:00:00", "Content": "《科普文章》" },
-      { "ExecutionTime": "2022-01-25 12:00:00", "Content": "请按时吃药" },
+      { ExecutionTime: "2022-01-23 14:00:00", Content: "《科普文章》" },
+      { ExecutionTime: "2022-01-25 12:00:00", Content: "请按时吃药" },
     ])
   })
   test("日期排序(反序)", () => {
@@ -58,8 +59,11 @@ describe("时间格式化", () => {
         "ExecutionTime",
       ),
     ).toStrictEqual([
-      { "ExecutionTime": "2022-01-25 12:00:00", "Content": "请按时吃药" },
-      { "ExecutionTime": "2022-01-23 14:00:00", "Content": "《科普文章》" },
+      { ExecutionTime: "2022-01-25 12:00:00", Content: "请按时吃药" },
+      { ExecutionTime: "2022-01-23 14:00:00", Content: "《科普文章》" },
     ])
+  })
+  test("计算生日距当前日期的天数", () => {
+    expect(getBirthSlot(new Date())).toBe(0)
   })
 })

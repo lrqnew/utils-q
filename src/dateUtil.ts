@@ -2,7 +2,7 @@
  * @Author: lrqnew
  * @Date: 2021-12-15 16:37:47
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2022-06-27 15:50:05
+ * @LastEditTime: 2022-06-27 17:10:03
  * @FilePath: \utils-q\src\dateUtil.ts
  * @Description: 时间格式化
  */
@@ -301,4 +301,19 @@ export function reverseRankingDate(data: any[], p: string | number) {
     }
   }
   return data
+}
+
+/**
+ * 计算生日距当前日期的天数
+ * @param date
+ * @returns
+ */
+export function getBirthSlot(date: string | number | Date) {
+  const birthDay: any = new Date(date)
+  const nowDate: any = new Date()
+  const date1 = Date.parse(birthDay)
+  const date2 = Date.parse(nowDate)
+  const day = Math.ceil((date2 - date1) / (60 * 60 * 1000 * 24))
+
+  return day
 }
