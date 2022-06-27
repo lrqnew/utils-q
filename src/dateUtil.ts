@@ -2,8 +2,8 @@
  * @Author: lrqnew
  * @Date: 2021-12-15 16:37:47
  * @LastEditors: Please set LastEditors
- * @LastEditTime: 2021-12-24 09:58:29
- * @FilePath: \q-utils\src\dateUtil.ts
+ * @LastEditTime: 2022-06-27 15:50:05
+ * @FilePath: \utils-q\src\dateUtil.ts
  * @Description: 时间格式化
  */
 import dayjs from "dayjs"
@@ -263,4 +263,42 @@ function doHandleMonth(month: string | number) {
   return m
 }
 
+/**
+ * 日期排序(正序)
+ * @param data 要排序的数组  [{"ExecutionTime": "2022-01-17 12:00:00","Content": "请按时吃药"},{ "ExecutionTime": "2022-01-23 14:00:00",
+                "Content": "《科普文章》"}]
+ * @param p 排序字段
+ * @returns
+ */
+export function forwardRankingDate(data: any[], p: string | number) {
+  for (let i = 0; i < data.length - 1; i++) {
+    for (let j = 0; j < data.length - 1 - i; j++) {
+      if (Date.parse(data[j][p]) > Date.parse(data[j + 1][p])) {
+        const temp = data[j]
+        data[j] = data[j + 1]
+        data[j + 1] = temp
+      }
+    }
+  }
+  return data
+}
 
+/**
+ * 日期排序(反序)
+ * @param data
+ * @param p
+ * @returns
+ */
+export function reverseRankingDate(data: any[], p: string | number) {
+  for (let i = 0; i < data.length - 1; i++) {
+    for (let j = 0; j < data.length - 1 - i; j++) {
+      console.log(Date.parse(data[j][p]))
+      if (Date.parse(data[j][p]) < Date.parse(data[j + 1][p])) {
+        const temp = data[j]
+        data[j] = data[j + 1]
+        data[j + 1] = temp
+      }
+    }
+  }
+  return data
+}
